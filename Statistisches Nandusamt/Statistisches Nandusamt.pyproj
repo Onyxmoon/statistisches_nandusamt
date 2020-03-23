@@ -24,10 +24,22 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Module\talentProbe.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Statistisches_Nandusamt.py" />
+    <Compile Include="Module\damageRechnerMitRS.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Module\talentProbe.xaml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Statistisches_Nandusamt.xaml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Module\damageRechnerMitRS.xaml">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
@@ -55,6 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="IronPython|2.7-32" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Module\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
